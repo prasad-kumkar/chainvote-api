@@ -17,12 +17,6 @@
     "fabric-client": "^1.4.10",
     "fabric-network": "~1.4.2",
     "morgan": "^1.9.1",
-    "node-gyp": "^5.1.0",
-    "node-pre-gyp": "^0.12.0",
     "nodemon": "^1.19.1"
-  },
-  "engines": {
-    "node": "10.13.0",
-    "npm": "6.4.1"
   }
 }
