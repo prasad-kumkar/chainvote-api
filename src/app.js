@@ -22,6 +22,8 @@ const config = JSON.parse(configJSON);
 //use this identity to query
 const appAdmin = config.appAdmin;
 
+//status of server
+app.get('/serverStatus', (req, res) => res.send("App running..."));
 //get all assets in world state
 app.get('/queryAll', async (req, res) => {
 
@@ -168,4 +170,4 @@ app.post('/queryByKey', async (req, res) => {
 });
 
 
-app.listen(process.env.PORT || 8081);
+app.listen(process.env.PORT || 8081, () => console.log("WYVote API Server running on 8081"));
